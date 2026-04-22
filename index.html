@@ -729,9 +729,53 @@
     <div class="container footer-inner">
       <div>© 2026 YadaHQ. All rights reserved.</div>
       <div>
-        <a href="mailto:hello@yadahq.com">hello@yadahq.com</a>
+        <a href="#waitlist-form">Join the Waitlist</a>
       </div>
     </div>
   </footer>
+
+<script>
+  const waitlistForm = document.getElementById("waitlist-form");
+  const waitlistButton = waitlistForm ? waitlistForm.querySelector('button[type="submit"]') : null;
+  const waitlistMessage = document.getElementById("waitlist-message");
+
+  if (waitlistForm) {
+    waitlistForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      waitlistButton.disabled = true;
+      waitlistButton.textContent = "Submitting...";
+      waitlistMessage.textContent = "";
+      waitlistMessage.className = "waitlist-message";
+
+      try {
+        const response = await fetch(waitlistForm.action, {
+          method: "POST",
+          body: new FormData(waitlistForm),
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (response.ok) {
+          waitlistForm.reset();
+          waitlistMessage.textContent = "Thanks — you’re on the waitlist.";
+          waitlistMessage.classList.add("success");
+        } else {
+          waitlistMessage.textContent = "Something went wrong. Please try again.";
+          waitlistMessage.classList.add("error");
+        }
+      } catch (error) {
+        waitlistMessage.textContent = "Connection issue. Please try again.";
+        waitlistMessage.classList.add("error");
+      } finally {
+        waitlistButton.disabled = false;
+        waitlistButton.textContent = "Join the Waitlist";
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
+
