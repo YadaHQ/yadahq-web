@@ -761,10 +761,13 @@
           waitlistForm.reset();
           waitlistMessage.textContent = "Thanks — you’re on the waitlist.";
           waitlistMessage.classList.add("success");
-        } else {
-          waitlistMessage.textContent = "Something went wrong. Please try again.";
-          waitlistMessage.classList.add("error");
-        }
+       } else {
+  const data = await response.json().catch(() => null);
+  const errorText =
+    data?.errors?.[0]?.message || "Something went wrong. Please try again.";
+  waitlistMessage.textContent = errorText;
+  waitlistMessage.classList.add("error");
+}
       } catch (error) {
         waitlistMessage.textContent = "Connection issue. Please try again.";
         waitlistMessage.classList.add("error");
