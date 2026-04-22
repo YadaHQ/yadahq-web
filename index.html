@@ -191,6 +191,52 @@
       flex-wrap: wrap;
     }
 
+.waitlist-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.waitlist-form input[type="email"] {
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  min-width: 260px;
+}
+
+.waitlist-form input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.waitlist-form input:focus {
+  border-color: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.12);
+}
+
+.waitlist-form .btn {
+  height: 52px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-note {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+}
+
+.hero-note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
     .hero-note {
       margin-top: 16px;
       color: var(--muted);
