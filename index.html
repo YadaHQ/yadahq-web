@@ -521,27 +521,56 @@
 }
   </style>
 </head>
-<body>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="/" class="brand">
-  <img src="/YadaHQ 3.jpg" alt="YadaHQ logo" height="40">
-  <span>YadaHQ</span>
-</a>
+<body id="top">
+  <header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="#top" aria-label="YadaHQ home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="yadahq-logo-hero.jpg" alt="" />
+      </span>
 
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#who">Who It’s For</a>
-        <a href="#trust">Why YadaHQ</a>
-      </div>
+      <span class="brand-name">Yada<span>HQ</span></span>
+    </a>
 
-            <div class="nav-cta">
-        <a class="btn btn-secondary" href="#waitlist-form">
-  Join the Waitlist
-</a>
-      </div>
+    <nav
+      class="nav-links"
+      id="primary-navigation"
+      aria-label="Primary navigation"
+    >
+      <a class="nav-link" href="#platform">Platform</a>
+      <a class="nav-link" href="#why-yadahq">Why YadaHQ</a>
+      <a class="nav-link" href="#private-beta">Private Beta</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="button button-primary" href="#private-beta-application">
+        Apply for Private Beta
+      </a>
+
+      <button
+        class="mobile-menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 7h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 17h16"></path>
+        </svg>
+      </button>
     </div>
-  </nav>
+  </div>
+</header>
 
   <header class="hero">
     <div class="container hero-grid">
