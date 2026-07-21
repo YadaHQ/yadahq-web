@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Apply for Private Beta | YadaHQ</title>
+
+    <meta
+      name="description"
+      content="Apply to join the YadaHQ Private Beta and help shape the future of church leadership software."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top" class="application-page">
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="Return to YadaHQ home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="yadahq-logo-hero.jpg" alt="" />
+          </span>
+
+          <span class="brand-name">Yada<span>HQ</span></span>
+        </a>
+
+        <div class="nav-actions">
+          <a class="button button-secondary" href="index.html">
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="application-hero"
+        aria-labelledby="application-page-title"
+      >
+        <div class="container application-layout">
+          <div class="application-introduction">
+            <div class="eyebrow">
+              Private Beta Applications Are Open
+            </div>
+
+            <h1 id="application-page-title">
+              Apply to become a YadaHQ founding church.
+            </h1>
+
+            <p class="application-lead">
+  Join a limited group of founding churches helping shape the future of
+  YadaHQ before public launch.
+
+  Work directly with the founder, receive early access to new features,
+  and help build the next generation of church leadership software.
+</p>
+
+            <div class="application-benefits">
+              <div class="application-benefit">
+                <span class="hero-check" aria-hidden="true">✓</span>
+                <span>Guided onboarding and direct communication</span>
+              </div>
+
+              <div class="application-benefit">
+                <span class="hero-check" aria-hidden="true">✓</span>
+                <span>Priority support throughout Private Beta</span>
+              </div>
+
+              <div class="application-benefit">
+                <span class="hero-check" aria-hidden="true">✓</span>
+                <span>Opportunity to help shape the final release</span>
+              </div>
+
+              <div class="application-benefit">
+                <span class="hero-check" aria-hidden="true">✓</span>
+                <span>Early access to the complete YadaHQ platform</span>
+              </div>
+            </div>
+
+            <div class="application-note">
+  <strong>What happens next?</strong>
+
+  <div class="application-next-steps">
+    <div>
+      <span class="hero-check" aria-hidden="true">✓</span>
+      <span>Every application is reviewed personally.</span>
+    </div>
+
+    <div>
+      <span class="hero-check" aria-hidden="true">✓</span>
+      <span>If your church is a good fit, we'll schedule a short conversation.</span>
+    </div>
+
+    <div>
+      <span class="hero-check" aria-hidden="true">✓</span>
+      <span>Selected churches receive early access and direct communication throughout Private Beta.</span>
+    </div>
+  </div>
+</div>
+</div>
+          <div class="application-form-card">
+            <div class="application-form-heading">
+              <span class="preview-label">Private Beta Application</span>
+
+              <h2>Tell us about your church.</h2>
+
+              <p>
+                Fields marked with an asterisk are required.
+              </p>
+            </div>
+
+            <form
+              id="private-beta-application"
+              class="application-form"
+              action="https://formspree.io/f/xaqapdaj"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New YadaHQ Private Beta Application"
+              />
+<input
+  type="hidden"
+  name="_next"
+  value="thank-you.html"
+/>
+              <div class="form-section">
+                <div class="form-section-heading">
+                  <span>1</span>
+
+                  <div>
+                    <h3>Church information</h3>
+                    <p>Tell us which church you represent.</p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-field form-field-full">
+                    <label for="church-name">
+                      Church Name <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      id="church-name"
+                      name="church_name"
+                      type="text"
+                      autocomplete="organization"
+                      placeholder="Miamisburg Wesleyan Church"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field form-field-full">
+                    <label for="church-website">
+                      Church Website
+                      <span class="optional-label">Optional</span>
+                    </label>
+
+                    <input
+                      id="church-website"
+                      name="church_website"
+                      type="url"
+                      inputmode="url"
+                      placeholder="https://yourchurch.org"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-section-heading">
+                  <span>2</span>
+
+                  <div>
+                    <h3>Primary contact</h3>
+                    <p>Who should we contact about this application?</p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="applicant-name">
+                      Your Name <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      id="applicant-name"
+                      name="applicant_name"
+                      type="text"
+                      autocomplete="name"
+                      placeholder="Your full name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="church-role">
+                      Role at Church <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      id="church-role"
+                      name="role_at_church"
+                      type="text"
+                      autocomplete="organization-title"
+                      placeholder="Pastor, administrator, treasurer..."
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="email-address">
+                      Email Address <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      id="email-address"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="phone-number">
+                      Phone Number <span aria-hidden="true">*</span>
+                    </label>
+
+                    <input
+                      id="phone-number"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      placeholder="937-555-1234"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-section-heading">
+                  <span>3</span>
+
+                  <div>
+                    <h3>Church details</h3>
+                    <p>
+                      These optional details help us understand your needs.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="weekly-attendance">
+                      Approximate Weekly Attendance
+                      <span class="optional-label">Optional</span>
+                    </label>
+
+                    <select
+                      id="weekly-attendance"
+                      name="approximate_weekly_attendance"
+                    >
+                      <option value="">Select a range</option>
+                      <option value="Under 50">Under 50</option>
+                      <option value="50–149">50–149</option>
+                      <option value="150–299">150–299</option>
+                      <option value="300–499">300–499</option>
+                      <option value="500–999">500–999</option>
+                      <option value="1,000 or more">1,000 or more</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="current-software">
+                      Current Church Software
+                      <span class="optional-label">Optional</span>
+                    </label>
+
+                    <select
+                      id="current-software"
+                      name="current_church_software"
+                    >
+                      <option value="">Select an option</option>
+                      <option value="Planning Center">
+                        Planning Center
+                      </option>
+                      <option value="Breeze">Breeze</option>
+                      <option value="ChurchTrac">ChurchTrac</option>
+                      <option value="Subsplash">Subsplash</option>
+                      <option value="Pushpay">Pushpay</option>
+                      <option value="Realm">Realm</option>
+                      <option value="Other">Other</option>
+                      <option value="None">None</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field form-field-full">
+                    <label for="application-message">
+                      What interests you about YadaHQ?
+                      <span class="optional-label">Optional</span>
+                    </label>
+
+                    <textarea
+                      id="application-message"
+                      name="interest_in_yadahq"
+                      rows="5"
+                      placeholder="Tell us what your church needs, what challenges you are facing, or what you hope YadaHQ can help improve."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <label class="consent-field">
+                <input
+                  type="checkbox"
+                  name="beta_contact_consent"
+                  value="Agreed"
+                  required
+                />
+
+                <span>
+                  I agree to be contacted regarding the YadaHQ Private
+                  Beta and understand that submitting this application
+                  does not guarantee acceptance.
+                  <strong aria-hidden="true">*</strong>
+                </span>
+              </label>
+
+              <button
+                class="button button-primary application-submit"
+                type="submit"
+              >
+                Submit Private Beta Application
+              </button>
+
+              <p class="application-privacy-note">
+                Your information will only be used to review your
+                application and communicate with you about YadaHQ.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 YadaHQ. All rights reserved.</div>
+
+        <div>
+          <a href="index.html">Return to YadaHQ.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
